@@ -1,0 +1,45 @@
+/* HERO */
+
+.hero {
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    color: $text-light;
+    font-family: $font-alt;
+    height:100%;
+    padding: 5rem 0;
+
+    h1 {
+        font-size: 2.250rem;
+        font-weight: bold;
+        margin-bottom: 1.575rem;
+        text-transform: uppercase;
+
+        & > span {
+            display: block;
+            font-size: 3rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+
+    .hero {
+        padding: 6.250rem 0;
+    }
+}
+
+
+@include media-breakpoint-up(md) {
+
+    .hero {
+        padding: 10rem 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .hero {
+        padding: 12.500rem 0;
+    }
+}

@@ -1,0 +1,34 @@
+/* SECTIONS */
+
+.section {
+
+}
+
+.section__title {
+
+    color: $text-dark;
+    margin-bottom: 5.313rem;
+    text-transform: uppercase;
+
+    &--underlined::after {
+        background-color: $primary-dark;
+        content: "";
+        display: block;
+        height: 4px;
+        margin: 3.438rem auto 0;
+        width: 67px;
+    }
+}
+
+
+@import 'header';
+
+@import 'about';
+
+@import 'team';
+
+@import 'social-links';
+
+@import 'services';
+
+@import 'footer';

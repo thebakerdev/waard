@@ -1,0 +1,15 @@
+/* HEADER */
+
+.header {
+
+}
+
+.header__info {
+    background-color: $secondary-dark;
+    color: $text-light;
+    padding: 1.250rem 0;
+}
+
+@import 'navigation';
+
+@import 'hero';

@@ -1,0 +1,43 @@
+/* BUTTONS */
+
+.button {
+    border:none;
+    border-radius: 30px;
+    color: $text-light;
+    cursor: pointer;
+    min-width: 200px;
+    padding: .750rem 2.20rem;
+    transition: all .3s ease-in-out;
+    -webkit-appearance: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &--primary {
+        background-color: $primary;
+
+        &:hover {
+            background-color: darken($primary,5%);
+        }
+    }
+
+    &--primary-dark {
+        background-color: $primary-dark;
+
+        &:hover {
+            background-color: darken($primary-dark,5%);
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary;
+
+        /* refactor this, make into a snippet */
+        &:hover {
+            background-color: darken($secondary,5%);
+        }
+    }
+
+}
+

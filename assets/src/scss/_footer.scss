@@ -1,0 +1,27 @@
+.footer {
+    background-color: $primary-dark;
+    color: $text-light;
+    padding: 85px 0 0;
+
+    h3 {
+        font-size: 1.500rem;
+    }
+}
+
+.footer__copyright-wrap {
+    background-color: $primary;
+    margin-top: 85px;
+    padding: 25px 0;
+
+    p {
+        margin: 0;
+    }
+}
+
+.footer-menu {
+    @extend .list;
+}
+
+.footer-menu__item {
+    margin-bottom: 5px;
+}
