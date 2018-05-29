@@ -1,6 +1,7 @@
 /* SOCIAL LINKS */
 
 .social-links {
+
     display:flex;
     flex-wrap: wrap;
     list-style: none;
@@ -12,11 +13,28 @@
 
     cursor: pointer;
     margin-right: 1rem;
+    
+
+    a {
+
+        color: $text-light;
+        transition: color .2s ease-in;
+
+        &:hover,
+        &:focus,
+        &:active {
+
+            color: $primary-dark;
+        }
+    }
 
     &--first {
+
         flex-basis: 100%;
     }
+
     &--last {
+
         margin-right: 0.5rem !important;
     }
 }
@@ -24,13 +42,16 @@
 @include media-breakpoint-up(md) {
 
     .social-links {
+
         flex-wrap: nowrap;
         justify-content: flex-end;
     }
     .social-links__item {
+
         margin-right: 1.563rem;
 
         &--first {
+            
             flex-basis: auto;
         }
     }

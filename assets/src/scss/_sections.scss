@@ -1,9 +1,5 @@
 /* SECTIONS */
 
-.section {
-
-}
-
 .section__title {
 
     color: $text-dark;
@@ -11,6 +7,7 @@
     text-transform: uppercase;
 
     &--underlined::after {
+
         background-color: $primary-dark;
         content: "";
         display: block;
@@ -18,8 +15,14 @@
         margin: 3.438rem auto 0;
         width: 67px;
     }
+
+    &--light {
+        
+        color: $text-light;
+    }
 }
 
+/* SECTION PARTIALS */
 
 @import 'header';
 
@@ -27,7 +30,7 @@
 
 @import 'team';
 
-@import 'social-links';
+@import 'facility';
 
 @import 'services';
 

@@ -2,7 +2,7 @@
 
 .navbar {
 
-    padding: 2.500rem 0.938rem !important;
+    padding: 1rem !important;
 
     a {
         color: $text !important;
@@ -16,12 +16,18 @@
     text-transform: uppercase;
 }
 
+.navbar-toggler {
+
+    border: none;
+}
+
 .navbar-collapse {
 
     margin-top: 0.625rem;
 }
 
 .nav-link {
+
     font-weight: bold;
     padding: 0.388rem 1.5rem !important;
 
@@ -33,6 +39,7 @@
 }
 
 .nav-item.active > .nav-link {
+
     background-color: $primary-dark;
     color: $text-light !important;
 }
@@ -45,7 +52,11 @@
     }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
+
+    .navbar {
+        padding: 2.500rem 0.938rem !important;
+    }
 
     .nav-link {
         border-radius: 19px;

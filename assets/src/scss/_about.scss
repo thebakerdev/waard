@@ -1,9 +1,11 @@
 .about {
+
     padding: 128px 0;
     @extend .text-center;
 }
 
 .about__description {
+
     margin-bottom: 90px;
 }
 
@@ -16,6 +18,7 @@
     @extend .mb-4;
 
     p {
+        
         color: $text-dark;
         font-size: 18px;
         margin-top:12px;

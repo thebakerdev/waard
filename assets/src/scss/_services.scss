@@ -1,6 +1,8 @@
+/* SERVICES */
+
 .services {
 
-    padding: 11.250rem 0;
+    padding: 7rem 0;
 }
 
 .service {
@@ -12,6 +14,7 @@
 }
 
 .service__header {
+
     background-color: $primary;
     color: $text-light;
     padding: 2.500rem 0;
@@ -20,16 +23,24 @@
         font-size: 1.875rem;
         @extend .m-0;
     }
+
+    &--dark {
+
+        background-color: $primary-dark;
+    }
 }
 
 .service__body {
+
     padding: 2.500rem 0;
 }
 
 .service-list {
+
     @extend .list;
 }
 
 .service-list__item {
+
     margin-bottom: 1.250em ;
 }
