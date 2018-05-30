@@ -1,8 +1,18 @@
 /* TEAM */
 
+.team {
+
+    padding: 0 0 7rem;
+}
+
 .team-profile {
 
+    display: none;
     box-shadow: 11.2px 12.8px 27px 0 rgba(0, 0, 0, 0.06);
+}
+
+.team-profile.active {
+    display: block;
 }
 
 .team-profile__image {
@@ -24,8 +34,16 @@
 }
 
 .team-info {
-
+    
+    display: none;
     padding: 3rem 2.188rem;
+    transition: all .3s ease-in;
+}
+
+.team-info.active {
+    
+    display: block;
+    //transition: all .10s ease-in;
 }
 
 .team-info__name {
@@ -47,7 +65,7 @@
 }
 
 .team-member__info {
-
+    
     span {
 
         display: block;

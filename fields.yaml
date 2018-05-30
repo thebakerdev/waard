@@ -1,0 +1,45 @@
+tabs:
+  fields:
+
+    ####################################################
+    # Tab: Info
+    ####################################################
+
+    website_name:
+      tab: Info
+      label: Website Name
+      type: text
+      default: Waard
+
+    website_author:
+      tab: Info
+      label: Author
+      type: text
+      default: The Baker Dev
+
+    website_url:
+      tab: Info
+      label: URL
+      type: text
+      default: "http://template.thebakerdev.com/waard"
+
+    description:
+      tab: Info
+      label: Description
+      type: textarea
+      default: "A one page theme using Boostrap 4. Best suited for medical and dental websites."
+
+    keywords:
+      tab: Info
+      label: Keywords
+      type: taglist
+      separator: comma
+      default: october,octobercms,themes,templates,free octobercms themes
+      options:
+        - october
+        - octobercms
+        - themes
+        - templates
+        - free octobercms themes
+
+    

@@ -4,3 +4,4 @@ previewImage: 'assets/dist/images/preview.jpg'
 author: 'The Baker Dev'
 homepage: 'http://octobercms.com'
 code: ''
+form: fields.yaml

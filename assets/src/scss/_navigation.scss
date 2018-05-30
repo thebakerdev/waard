@@ -38,11 +38,11 @@
     }
 }
 
-.nav-item.active > .nav-link {
-
+.nav-link.active {
     background-color: $primary-dark;
     color: $text-light !important;
 }
+
 
 @include media-breakpoint-up(sm) {
 
@@ -67,7 +67,7 @@
         font-size: 2.250rem;
     }
 
-    .nav-item.active > .nav-link {
+    .nav-link.active {
         box-shadow: 4.6px 5.3px 9.4px 0.6px rgba(0, 0, 0, 0.14);
 
     }
