@@ -1,2 +1,12 @@
-# waard
-A single page template for OctoberCMS
+# Waard
+A free one page theme using Boostrap 4. Best suited for medical and dental websites.
+
+### Features and Credits
+- Bootstrap 4 https://getbootstrap.com/
+- FontAwesome 5 https://fontawesome.com/
+- Zenscroll https://github.com/zengabor/zenscroll
+- AOS https://michalsnik.github.io/aos/
+- Laravel Mix https://github.com/JeffreyWay/laravel-mix
+
+### Demo
+- http://template.thebakerdev.com/waard
