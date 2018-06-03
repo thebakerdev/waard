@@ -10941,7 +10941,6 @@ small {
 
 /* HERO */
 .hero {
-  background: url(../images/hero.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;

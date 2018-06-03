@@ -9,16 +9,16 @@
                     <ul class="social-links">
                         <li class="social-links__item social-links__item--first">0934-345-345</li>
                         <li class="social-links__item">
-                            <a href="google.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="{{ this.theme.facebook_link }}" target="_blank"><i class="fab fa-facebook"></i></a>
                         </li>
                         <li class="social-links__item">
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="{{ this.theme.twitter_link }}" target="_blank"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="social-links__item">
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="{{ this.theme.instagram_link }}" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li class="social-links__item social-links__item--last">
-                            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                            <a href="{{ this.theme.pinterest_link }}" target="_blank"><i class="fab fa-pinterest"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -26,7 +26,7 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand" href="#"><span class="highlight__primary--dark">Waard</span></a>
+        <a class="navbar-brand" href="#"><span class="highlight__primary--dark">{{ this.theme.website_name }}</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,11 +51,11 @@
           </ul>
         </div>
       </nav>
-      <div class="hero">
+      <div class="hero" style="background-image:url('{{ this.theme.hero_image|media|default('assets/dist/images/hero.jpg'|theme) }}')">
           <div class="container">
               <div class="col-sm-12 col-lg-6 ml-auto">
                   <h1>Welcome to <span><span class="highlight__primary--dark">waard</span> template</span></h1>
-                  <p class="mb-5">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.</p>
+                  <p class="mb-5">{{ this.theme.hero_description }}</p>
                   <button class="button button--primary-dark">More Information</button>
               </div>
           </div>
