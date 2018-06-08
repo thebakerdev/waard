@@ -10946,7 +10946,7 @@ small {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   height: 100%;
-  padding: 5rem 0;
+  position: relative;
 }
 
 .hero h1 {
@@ -10961,24 +10961,32 @@ small {
   font-size: 3rem;
 }
 
-@media (min-width: 576px) {
-  .hero {
-    padding: 6.250rem 0;
-  }
+.hero::before {
+  background: #2d3436;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    padding: 10rem 0;
-  }
+.hero div[class*=' col-'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 37.500rem;
 }
 
-@media (min-width: 992px) {
-  .hero {
-    padding: 12.500rem 0;
-  }
-}
-
+/* ABOUT */
 .about {
   padding: 128px 0;
 }
@@ -11204,6 +11212,7 @@ small {
   margin-bottom: 1.250em;
 }
 
+/* FOOTER */
 .footer {
   background-color: #00cec9;
   color: #ffffff;

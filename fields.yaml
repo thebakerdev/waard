@@ -41,7 +41,7 @@ tabs:
         - free octobercms themes
         
     # TAB: HERO
-
+    
     hero_description:
       tab: Hero
       label: Hero Description
@@ -53,6 +53,69 @@ tabs:
       label: Hero Image
       type: mediafinder
       mode: image
+
+    hero_carousel:
+      tab: Hero
+      label: Use Carousel
+      type: switch
+      comment: Use carousel instead of static hero image
+      default: false
+      span: full
+    
+    hero_carousel_controls:
+      tab: Hero
+      label: Show Controls
+      type: switch
+      default: false
+      span: auto
+      trigger:
+        action: show
+        field: hero_carousel
+        condition: checked
+      
+    hero_carousel_indicators:
+      tab: Hero
+      label: Show Indicators
+      type: switch
+      default: false
+      span: auto
+      trigger:
+        action: show
+        field: hero_carousel
+        condition: checked
+
+    hero_carousel_slide_1:
+      tab: Hero
+      label: Hero Carousel Slide 1
+      type: mediafinder
+      mode: image
+      default: slide_1.jpg
+      trigger:
+        action: show
+        field: hero_carousel
+        condition: checked
+
+    hero_carousel_slide_2:
+      tab: Hero
+      label: Hero Carousel Slide 2
+      type: mediafinder
+      mode: image
+      default: slide_2.jpg
+      trigger:
+        action: show
+        field: hero_carousel
+        condition: checked
+
+    hero_carousel_slide_3:
+      tab: Hero
+      label: Hero Carousel Slide 3
+      type: mediafinder
+      mode: image
+      default: slide_3.jpg
+      trigger:
+        action: show
+        field: hero_carousel
+        condition: checked
     
     # TAB: SOCIAL LINKS
 
@@ -143,6 +206,14 @@ tabs:
       type: text
       default: fas fa-plus
     
+    # TAB: TEAM
+
+    team_heading:
+      tab: Team
+      label: Heading
+      type: text
+      default: Our Team
+
     # TAB: FACILITY
     
     facility_heading:
@@ -217,3 +288,61 @@ tabs:
       label: Copyright
       type: text
       default: '@copyright Waard Template'
+
+    # TAB: COLORS
+
+    color_primary:
+      tab: Colors
+      label: Primary
+      type: colorpicker
+      availableColors: ["#81ecec","#fc5c65","#fed330","#a55eea"]
+      default: "#81ecec"
+      assetVar: "color-primary"
+
+    color_primary_dark:
+      tab: Colors
+      label: Primary Dark
+      type: colorpicker
+      availableColors: ["#00cec9","#eb3b5a","#f7b731","#8854d0"]
+      default: "#00cec9"
+      assetVar: "color-primary-dark"
+
+    color_secondary:
+      tab: Colors
+      label: Secondary
+      type: colorpicker
+      availableColors: ["#74b9ff","#778ca3","#fd9644","#d1d8e0"]
+      default: "#74b9ff"
+      assetVar: "color-secondary"
+
+    color_secondary_dark:
+      tab: Colors
+      label: Secondary Dark
+      type: colorpicker
+      availableColors: ["#0984e3","#4b6584","#fa8231","#a5b1c2"]
+      default: "#0984e3"
+      assetVar: "color-secondary-dark"
+
+    color_text:
+      tab: Colors
+      label: Text
+      type: colorpicker
+      availableColors: ["#636e72"]
+      default: "#636e72"
+      assetVar: "color-text"
+
+    color_text_light:
+      tab: Colors
+      label: Text Light
+      type: colorpicker
+      availableColors: ["#ffffff"]
+      default: "#ffffff"
+      assetVar: "color-text-light"
+
+    color_text_dark:
+      tab: Colors
+      label: Text Dark
+      type: colorpicker
+      availableColors: ["#2d3436"]
+      default: "#2d3436"
+      assetVar: "color-text-dark"
