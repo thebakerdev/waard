@@ -21,8 +21,6 @@ let navigation = (function(zenscroll){
         toggleActive();
 
         zenscroll.setup(null, -1);
-
-        console.log("initialize navigation");
     }
 
     return {
