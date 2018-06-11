@@ -9,13 +9,21 @@ description = "Default layout"
     <div class="wrapper">
         {% partial 'header' %}
         <main class="content">
-            {% partial 'about' %}
+            {% if(this.theme.section_about) %}
+                {% partial 'about' %}
+            {% endif %}
 
-            {% partial 'team' %}
+            {% if(this.theme.section_team) %}
+                {% partial 'team' %}
+            {% endif %}
 
-            {% partial 'facility' %}
+            {% if(this.theme.section_facility) %}
+                {% partial 'facility' %}
+            {% endif %}
 
-            {% partial 'services' %}
+            {% if(this.theme.section_services) %}
+                {% partial 'services' %}
+            {% endif %}
             
         </main>
         {% partial 'footer' %}

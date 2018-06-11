@@ -346,3 +346,29 @@ tabs:
       availableColors: ["#2d3436"]
       default: "#2d3436"
       assetVar: "color-text-dark"
+    
+    # TAB: SECTIONS
+
+    section_about:
+      tab: Sections
+      label: Show About
+      type: switch
+      default: true
+    
+    section_team:
+      tab: Sections
+      label: Show Team
+      type: switch
+      default: true
+
+    section_facility:
+      tab: Sections
+      label: Show Facility
+      type: switch
+      default: true
+
+    section_services:
+      tab: Sections
+      label: Show Services
+      type: switch
+      default: true

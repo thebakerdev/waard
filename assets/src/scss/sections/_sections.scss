@@ -1,9 +1,14 @@
 /* SECTIONS */
 
+.section {
+
+    margin-bottom: 7rem;
+}
+
 .section__title {
 
     color: $text-dark;
-    margin-bottom: 5.313rem;
+    margin: 0 0 5.313rem;
     text-transform: uppercase;
 
     &--underlined::after {
@@ -25,6 +30,10 @@
 /* SECTION PARTIALS */
 
 @import 'header';
+
+@import 'navigation';
+
+@import 'hero';
 
 @import 'about';
 

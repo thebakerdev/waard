@@ -1,16 +1,20 @@
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
-@import "~aos/src/sass/aos";
+@import '~aos/src/sass/aos';
 
-@import 'variables';
+@import 'global/variables';
 
-@import 'global';
+@import 'global/global';
 
-@import 'typography';
+@import 'global/typography';
 
-@import 'buttons';
+@import 'components/buttons';
 
-@import 'modal';
+@import 'components/lists';
 
-@import 'sections';
+@import 'components/social-links';
+
+@import 'components/modal';
+
+@import 'sections/sections'; 
 

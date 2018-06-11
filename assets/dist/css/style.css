@@ -10679,12 +10679,6 @@ body {
   color: #0984e3;
 }
 
-.list, .service-list, .footer-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* TYPOGRAPHY */
 html {
   font-size: 16px;
@@ -10786,43 +10780,11 @@ small {
   background-color: #5bacff;
 }
 
-/* MODAL */
-.modal-title {
-  color: #000;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.modal-body {
-  padding: 1.5rem;
-}
-
-/* SECTIONS */
-.section__title {
-  color: #2d3436;
-  margin-bottom: 5.313rem;
-  text-transform: uppercase;
-}
-
-.section__title--underlined::after {
-  background-color: #00cec9;
-  content: "";
-  display: block;
-  height: 4px;
-  margin: 3.438rem auto 0;
-  width: 67px;
-}
-
-.section__title--light {
-  color: #ffffff;
-}
-
-/* SECTION PARTIALS */
-/* HEADER */
-.header__info {
-  background-color: #0984e3;
-  color: #ffffff;
-  padding: 1.250rem 0;
+/* LISTS */
+.list, .social-links, .service-list, .footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* SOCIAL LINKS */
@@ -10832,9 +10794,6 @@ small {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .social-links__item {
@@ -10876,6 +10835,49 @@ small {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+}
+
+/* MODAL */
+.modal-title {
+  color: #2d3436;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 7rem;
+}
+
+.section__title {
+  color: #2d3436;
+  margin: 0 0 5.313rem;
+  text-transform: uppercase;
+}
+
+.section__title--underlined::after {
+  background-color: #00cec9;
+  content: "";
+  display: block;
+  height: 4px;
+  margin: 3.438rem auto 0;
+  width: 67px;
+}
+
+.section__title--light {
+  color: #ffffff;
+}
+
+/* SECTION PARTIALS */
+/* HEADER */
+.header__info {
+  background-color: #0984e3;
+  color: #ffffff;
+  padding: 1.250rem 0;
 }
 
 /* NAVIGATION */
@@ -10987,10 +10989,6 @@ small {
 }
 
 /* ABOUT */
-.about {
-  padding: 128px 0;
-}
-
 .about__description {
   margin-bottom: 90px;
 }
@@ -11028,10 +11026,6 @@ small {
 }
 
 /* TEAM */
-.team {
-  padding: 0 0 7rem;
-}
-
 .team-profile {
   display: none;
   -webkit-box-shadow: 11.2px 12.8px 27px 0 rgba(0, 0, 0, 0.06);
@@ -11181,10 +11175,6 @@ small {
 }
 
 /* SERVICES */
-.services {
-  padding: 7rem 0;
-}
-
 .service {
   -webkit-box-shadow: 11.2px 12.8px 27px 0 rgba(0, 0, 0, 0.06);
           box-shadow: 11.2px 12.8px 27px 0 rgba(0, 0, 0, 0.06);

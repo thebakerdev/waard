@@ -36,23 +36,31 @@
             <li class="nav-item active">
               <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#facility">Facility</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
+            {% if(this.theme.section_about) %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+            {% endif %}
+            {% if(this.theme.section_team) %}
+                <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                </li>
+            {% endif %}
+            {% if(this.theme.section_facility) %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#facility">Facility</a>
+                </li>
+            {% endif %}
+            {% if(this.theme.section_services) %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+            {% endif %}
           </ul>
         </div>
       </nav>
       {% if(this.theme.hero_carousel == false) %}
-        <div class="hero" style="background-image:url('{{ this.theme.hero_image ? this.theme.hero_image|media : 'assets/dist/images/hero.jpg'|theme  }}')">
+        <div class="hero section" style="background-image:url('{{ this.theme.hero_image ? this.theme.hero_image|media : 'assets/dist/images/hero.jpg'|theme  }}')">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 ml-auto">
@@ -66,8 +74,8 @@
             </div>
         </div>
       {% else %}
-      <div class="hero-carousel">
-            <div id="hero-carousel__item-indicators" class="carousel slide" data-ride="carousel">
+      <div class="hero-carousel section">
+            <div id="hero-carousel__item-indicators" class="carousel slide carousel-fade" data-ride="carousel">
                 {% if(this.theme.hero_carousel_indicators) %}
                     <ol class="carousel-indicators">
                         <li data-target="#hero-carousel__item-indicators" data-slide-to="0" class="active"></li>
