@@ -10874,6 +10874,10 @@ small {
 
 /* SECTION PARTIALS */
 /* HEADER */
+.header {
+  background: #ffffff;
+}
+
 .header__info {
   background-color: #0984e3;
   color: #ffffff;
@@ -10882,7 +10886,10 @@ small {
 
 /* NAVIGATION */
 .navbar {
+  background-color: #ffffff;
   padding: 1rem !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .navbar a {
@@ -11083,6 +11090,9 @@ small {
 
 .team-member__item {
   cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .team-member__info span {
@@ -11091,6 +11101,19 @@ small {
 
 .team-member__name {
   color: #2d3436;
+}
+
+.team-member__image {
+  max-height: 85px;
+  max-width: 85px;
+}
+
+@media screen and (min-width: 370px) {
+  .team-member__image {
+    max-height: 107px;
+    max-width: 107px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 576px) {

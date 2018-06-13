@@ -25,39 +25,43 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand" href="#"><span class="highlight__primary--dark">{{ this.theme.website_name }}</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            {% if(this.theme.section_about) %}
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+    
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="highlight__primary--dark">{{ this.theme.website_name }}</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
-            {% endif %}
-            {% if(this.theme.section_team) %}
-                <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                </li>
-            {% endif %}
-            {% if(this.theme.section_facility) %}
-                <li class="nav-item">
-                    <a class="nav-link" href="#facility">Facility</a>
-                </li>
-            {% endif %}
-            {% if(this.theme.section_services) %}
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-            {% endif %}
-          </ul>
+                {% if(this.theme.section_about) %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                {% endif %}
+                {% if(this.theme.section_team) %}
+                    <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                    </li>
+                {% endif %}
+                {% if(this.theme.section_facility) %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facility">Facility</a>
+                    </li>
+                {% endif %}
+                {% if(this.theme.section_services) %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                {% endif %}
+                </ul>
+            </div>
         </div>
+        
       </nav>
       {% if(this.theme.hero_carousel == false) %}
         <div class="hero section" style="background-image:url('{{ this.theme.hero_image ? this.theme.hero_image|media : 'assets/dist/images/hero.jpg'|theme  }}')">

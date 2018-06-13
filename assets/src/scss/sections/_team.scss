@@ -56,7 +56,9 @@
 }
 
 .team-member__item {
+
     cursor: pointer;
+    flex: 1;
 }
 
 .team-member__info {
@@ -70,6 +72,23 @@
 .team-member__name {
     
     color: $text-dark;
+}
+
+.team-member__image {
+
+    max-height:85px;
+    max-width:85px;
+
+}
+
+@media screen and (min-width:370px) {
+
+    .team-member__image {
+
+        max-height:107px;
+        max-width:107px;
+        width: 100%;
+    }
 }
 
 @include media-breakpoint-up(sm) {
